@@ -15,7 +15,7 @@
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
-		<string>Endicia for Mac</string>
+		<string>Endicia</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -23,9 +23,9 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string> </string>
+			<string>Print shipping labels or online postage right from your desk.</string>
 			<key>developer</key>
-			<string>DYMO Endicia / Psi Systems</string>
+			<string>Endicia</string>
 			<key>display_name</key>
 			<string>Endicia for Mac</string>
 			<key>name</key>
