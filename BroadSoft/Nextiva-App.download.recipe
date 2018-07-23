@@ -10,8 +10,6 @@
 	<string>com.github.tobiasjwm.download.NextivaApp</string>
 	<key>Input</key>
 	<dict>
-		<key>DOWNLOAD_URL</key>
-		<string>https://dm.nextiva.com/dms/bc/pc/Nextiva_App.bc-uc.osx-21.6.2.44.dmg</string>
 		<key>NAME</key>
 		<string>NextivaApp</string>
 	</dict>
@@ -19,13 +17,22 @@
 	<string>1.0.0</string>
 	<key>Process</key>
 	<array>
+        <dict>
+            <key>Processor</key>
+            <string>URLTextSearcher</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>https://www.nextiva.com/support/articles/nextiva-app-mac-setup.html</string>
+                <key>re_pattern</key>
+                <string>(?P&lt;url&gt;https://dm.nextiva.com/dms/bc/pc/Nextiva_App.bc-uc.osx-.*?.dmg)</string>
+            </dict>
+        </dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
 				<string>%NAME%.dmg</string>
-				<key>url</key>
-				<string>%DOWNLOAD_URL%</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
